@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Projects - George Simotas">
+    <link type="text/css" rel="stylesheet" href="projects.css">
+    <title>Projects | Resume</title>
+</head>
+<body>
+    <div id="page-wrapper">
+        <header>
+            <h1>George Simotas</h1>
+            <p>My Online Resume</p>
+        </header>
+        <div id="container">
+        
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/education/education.html">Education</a></li>
+                <li><a href="/experience/experience.html">Experience</a></li>
+                <li><a href="/skills/skills.html">Skills</a></li>
+                <li><a href="/projects/projects.html">Projects</a></li>
+                <li><a href="/references/references.html">References</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h3 id="main-title">Projects</h3>
+
+            <div class="projects-container">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="soccerplayer.jpg" alt="Project 1 Logo">
+                    <div class="project-info">
+                        <h2>Predictive FIFA Player Ratings</h2>
+                        <p>This project focuses on developing a predictive model to forecast players' potential ratings, aimed at helping users, such as FIFA gamers and soccer fans, make strategic decisions. By predicting potential ratings, gamers can select the best players to enhance their team's performance, while sports enthusiasts can discover emerging talents who might become future superstars.</p>
+                        <p><strong>Technologies:</strong> Python, Pandas, Scikit-learn</p>
+                        <a href="https://github.com/gsimotas/PotentialRating-Fifa" target="_blank">GitHub Repo</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="budget.png" alt="Project 2 Logo">
+                    <div class="project-info">
+                        <h2>Boston Budget Analysis</h2>
+                        <p>Analyzed Boston's official operating and capital budget data to identify trends in city spending.</p>
+                        <p><strong>Technologies:</strong> Python, Pandas, Matplotlib</p>
+                        <a href="https://github.com/gsimotas/boston-budget-analysis" target="_blank">GitHub Repo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Calculator Section -->
+            <div class="calculator">
+                <h2>Calculator</h2>
+                <div class="calc-inputs">
+                    <input type="number" id="num1" placeholder="Enter first number">
+                    <input type="number" id="num2" placeholder="Enter second number">
+                </div>
+                <div class="calc-buttons">
+                    <button onclick="addNumbers()">+</button>
+                    <button onclick="subtractNumbers()">-</button>
+                    <button onclick="multiplyNumbers()">*</button>
+                    <button onclick="divideNumbers()">/</button>
+                    <button onclick="powerNumbers()">**</button>
+                    <button onclick="clearCalculator()">Clear</button>
+                </div>
+                <h3 id="calc-result">Result: </h3>
+            </div>     
+
+        </main>
+        </div>
+
+        <footer>
+            <p>All Rights Reserved by George Simotas <a href="credits.html">Credits</a> &copy;</p>
+        </footer>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>

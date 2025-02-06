@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Centering the page*/
+#page-wrapper{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+/*Header starts*/
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 1vw;
+    background-color: rgb(48, 93, 42);
+    color: bisque;
+}
+/*Header ends*/
+
+/*Two column container starts:*/
+#container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: rgb(41, 101, 144);
+}
+
+nav{
+    width: 30%;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(41, 101, 144);
+    font-size: calc(2px + 2vw);
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+nav li{
+    font-size: calc(3px + 3vw);
+    width: 90%;
+    background-color:rgb(47, 53, 61);
+    padding: 2vh 0;
+    margin: 5vh auto;
+    
+}
+
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    background-color: rgb(184, 183, 182);
+}
+
+
+#main-title{
+    margin: 2vw 0;
+    text-align: center;
+    font-size: calc(2px + 2vw);
+    color: rgb(0, 0, 0);
+}
+/*Projects*/
+
+/* Updated Projects Container - Horizontal Layout */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5vw;
+    padding: 2vw;
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 1vw;
+    border-radius: 8px;
+}
+
+.project-card img {
+    width: 6vw; 
+    height: auto;
+    margin-right: 3vw;
+}
+
+.project-info h2 {
+    font-size: calc(10px + 1vw);
+    color: rgb(48, 93, 42);
+    margin-bottom: .3vw;
+}
+
+.project-info p {
+    font-size: calc(8px + 0.5vw);
+    color: rgb(50, 50, 50);
+    margin-bottom: 0.5vw;
+    line-height: 1.2;
+}
+
+.project-info a {
+    display: inline-block;
+    margin-top: 0.5vw;
+    padding: 0.5vw 1.5vw;
+    background: rgb(41, 101, 144);
+    color: white;
+    text-decoration: none;
+    font-size: calc(8px + 0.4vw);
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+/* Hover Effect for Links */
+.project-info a:hover {
+    background: rgb(48, 93, 42);
+}
+
+/* Calculator Section */
+.calculator {
+    margin: 3vw;
+    padding: 1vw;
+    background: white;
+    text-align: center;
+    border-radius: 8px;
+}
+.calculator h2{
+    font-size: calc(8px + 2vw);
+    padding: .5vw;
+}
+/* Inputs */
+.calc-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    margin-bottom: 1vw;
+}
+
+.calc-inputs input {
+    width: 40%;
+    padding: 0.8vw;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: calc(10px + 0.5vw);
+}
+
+/* Buttons */
+.calc-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    flex-wrap: wrap;
+}
+
+.calc-buttons button {
+    background: rgb(41, 101, 144);
+    color: white;
+    border: none;
+    padding: 0.8vw 2vw;
+    font-size: calc(10px + 0.5vw);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.calc-buttons button:hover {
+    background: rgb(48, 93, 42);
+}
+
+/* Result Display */
+#calc-result {
+    font-size: calc(12px + 1vw);
+    margin-top: 1vw;
+    color: black;
+    font-weight: bold;
+}
+
+
+footer{
+    background-color: rgb(48, 93, 42);
+    color: bisque;
+    padding: 1vh 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer a{
+    color: bisque;
+    
+}
+
+@media screen and (max-width: 900px) {
+    header{
+        align-items: center;
+    }
+
+    #container{
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgb(41, 101, 144);
+        list-style: none;
+        padding-left: 0;
+    }
+
+    nav li{
+        font-size: calc(2px + 1.5vw);
+        background-color: rgb(47, 53, 61);
+        padding: 1% .5%;
+        margin: 1% .5%;
+    }
+
+    nav a{
+        text-decoration: none;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        height: 100vh;
+        background-color: rgb(184, 183, 182);
+    }
+
+    #main-title{
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 90%;
+        padding: 2vw;
+    }
+
+    .project-info a {
+        padding: 1vw 3vw;
+        font-size: calc(10px + 0.5vw);
+    }
+}

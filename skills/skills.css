@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Centering the page*/
+#page-wrapper{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+/*Header starts*/
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 1vw;
+    background-color: rgb(48, 93, 42);
+    color: bisque;
+}
+/*Header ends*/
+
+/*Two column container starts:*/
+#container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: rgb(41, 101, 144);
+}
+
+nav{
+    width: 30%;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(41, 101, 144);
+    font-size: calc(2px + 2vw);
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+nav li{
+    font-size: calc(3px + 3vw);
+    width: 90%;
+    background-color:rgb(47, 53, 61);
+    padding: 2vh 0;
+    margin: 5vh auto;
+    
+}
+
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    background-color: rgb(184, 183, 182);
+}
+
+#main-title{
+    margin: 2vw 0;
+    text-align: center;
+    font-size: calc(2px + 2vw);
+    color: rgb(0, 0, 0);
+}
+
+/*Skills Section*/
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8vw;
+    padding: 1vw;
+}
+
+.skills-section {
+    background: white;
+    padding: 2vw;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.skills-section:hover {
+    transform: scale(1.02);
+}
+
+.skills-section h2 {
+    font-size: calc(14px + 1vw);
+    color: rgb(48, 93, 42);
+    margin-bottom: 1vw;
+    border-bottom: 2px solid rgb(48, 93, 42);
+    padding-bottom: 0.5vw;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1vw;
+    padding: 1vw;
+}
+
+.skill-badge {
+    background: rgb(41, 101, 144);
+    color: white;
+    padding: 0.8vw 2vw;
+    font-size: calc(10px + 0.4vw);
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.skill-badge:hover {
+    background: rgb(48, 93, 42);
+}
+
+footer{
+    background-color: rgb(48, 93, 42);
+    color: bisque;
+    padding: 1vh 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer a{
+    color: bisque;
+    
+}
+
+@media screen and (max-width: 900px) {
+    header{
+        align-items: center;
+    }
+
+    #container{
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgb(41, 101, 144);
+        list-style: none;
+        padding-left: 0;
+    }
+
+    nav li{
+        font-size: calc(2px + 1.5vw);
+        background-color: rgb(47, 53, 61);
+        padding: 1% .5%;
+        margin: 1% .5%;
+    }
+
+    nav a{
+        text-decoration: none;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        height: 100vh;
+        background-color: rgb(184, 183, 182);
+    }
+
+    #main-title{
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }
+
+    .skills-container{
+        padding: 1vw;
+        gap: 10vw;
+    }
+    .skills-section {
+        width: 90%;
+        padding: 5vw;
+    }
+
+    .skill-badge {
+        padding: 1vw 3vw;
+        font-size: calc(10px + 0.5vw);
+    }
+}
