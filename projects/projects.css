@@ -72,9 +72,8 @@ main{
     font-size: calc(2px + 2vw);
     color: rgb(0, 0, 0);
 }
-/*Projects*/
+/*Projects section*/
 
-/* Updated Projects Container - Horizontal Layout */
 .projects-container {
     display: flex;
     flex-direction: column;
@@ -122,7 +121,6 @@ main{
     font-weight: bold;
 }
 
-/* Hover Effect for Links */
 .project-info a:hover {
     background: rgb(48, 93, 42);
 }
@@ -139,7 +137,7 @@ main{
     font-size: calc(8px + 2vw);
     padding: .5vw;
 }
-/* Inputs */
+
 .calc-inputs {
     display: flex;
     justify-content: center;
@@ -155,7 +153,6 @@ main{
     font-size: calc(10px + 0.5vw);
 }
 
-/* Buttons */
 .calc-buttons {
     display: flex;
     justify-content: center;
@@ -177,7 +174,6 @@ main{
     background: rgb(48, 93, 42);
 }
 
-/* Result Display */
 #calc-result {
     font-size: calc(12px + 1vw);
     margin-top: 1vw;
